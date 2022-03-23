@@ -1,0 +1,48 @@
+{
+  "name": "imaged-processing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint --fix src/**/*.ts",
+    "prettier": "prettier --config .prettierrc src/**/*.ts --write",
+    "build": "npx tsc",
+    "start": "nodemon src/index.ts",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmoudmagdy10/Image_processing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahmoudmagdy10/Image_processing/issues"
+  },
+  "homepage": "https://github.com/mahmoudmagdy10/Image_processing#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^3.10.3",
+    "@types/node": "^17.0.10",
+    "@types/sharp": "^0.29.5",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^1.19.1",
+    "superset": "^2.0.1",
+    "supertest": "^6.2.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "sharp": "^0.29.3"
+  }
+}
